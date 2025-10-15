@@ -11,36 +11,38 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
 </head>
-<!----   SECCION-BODY   ---->
+<!----  ----------------- SECCION-BODY --------------------------------  ---->
 
 <body>
-    <!--  Hero -->
-    <header class="hero">
+    <!-- ----------------       --- Hero----            -- -->
+    <header class="hero" id="hero-top">
         <div class="menu-container">
             <a href="https://adalab.es/" rel="pagina adalab">
-                <img src="./image/ico-menu.svg" alt="boton hamburgesa" class="menu" />
+                <img src="./image/menu-ico.svg" alt="boton hamburgesa" class="menu" />
             </a>
 
         </div>
         <div class="tex">
-            <h1>COMIENZOS COMPARTIDOS</h1>
-            <p>Todo lo que necesitan para volver al cole con ilusión</p>
+            <h1 class="title">COMIENZOS COMPARTIDOS</h1>
+            <p class="delusion">Todo lo que necesitan para volver al cole con ilusión</p>
         </div>
-        <img src="./image/green-scroll.svg" alt="Flecha scroll" class="scroll">
+        <a href="#vuelta-al-cole">
+            <img src="./image/scroll.svg" alt="Flecha scroll" class="scroll">
+        </a>
     </header>
-    <!-- content -->
+    <!--    -------content------       -->
     <main>
         <section class="content">
             <p class="history">HISTORIAS, MODAS Y ROPA DEPORTIVA</p>
             <h2 class="shop">TU TIENDA DE DEPORTE</h2>
-            <p> El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre
+            <p class="sport"> El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre
                 y mujer te
                 ofrece las últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca
                 personal.</p>
-            <a>comprar</a>
+            <a class="button-shop" href="https://adalab.es/" rel="pagina adalab">comprar</a>
         </section>
         <!-- -----------------Reason------------------- -->
-        <section class="Reason">
+        <section class="Reason" id="vuelta-al-cole">
             <div class="list-item">
                 <p class="call"> ¡Prepáralos con tus marcas favoritas!</p>
                 <h2 class="Lap"> VUELTA AL COLE</h2>
@@ -57,13 +59,14 @@
                 <span>Bolsas de deporte</span>
             </div>
             <a class="button-now" href="https://adalab.es/" rel="pagina adalab">Empezar ahora</a>
-            <a href="#hero-top">
-                <img src="./image/ico-arrow-green.svg" alt="Flecha" class="arrow">
-            </a>
+
         </section>
     </main>
     <!--  ------------------footer---------------------   -->
     <footer class="page">
+        <a href="#hero-top">
+            <img src="./image/ico-arrow-green.svg" alt="Flecha" class="arrow">
+        </a>
         <ul class="clothes">
             <li>zapatillas</li>
             <li>ropa</li>

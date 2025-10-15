@@ -9,22 +9,41 @@
     font-optical-sizing: auto;
 }
 
+/*-- ---------hero---------*/
 
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("./image/cover.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80rem;
+    background-position: center;
+    height: 56rem;
     width: 100%;
     position: relative;
+    color: white;
     /* max-width: 100%;*/
+}
 
+.menu-container {
+    position: fixed;
+    top: 0%;
+    left: 0rem;
+    z-index: 2000;
 }
 
 .menu {
     display: inline;
-    height: 1.5em;
-    justify-content: flex-end;
+    height: 2.5rem;
+    background-color: #6c933e;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end
 }
 
 .cover {
@@ -34,28 +53,45 @@
     display: block;
 }
 
-
-
-/*  content  */
+/*  ----------------content------------------  */
 .content {
 
     display: flex;
+    /*contenedor flexibl */
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    align-items: flex-start;
+    text-align: left;
     line-height: 1.5;
+    /* altura linea texto*/
     font-size: 1.25rem;
     width: 100%;
+    /* ancho completo*/
     padding: 2rem 1rem;
+    /* espacio interno*/
     max-width: 50rem;
+    /* responsi evita que se estire demasiado*/
     margin: 0 auto;
 }
 
 .history {
+    line-height: 1.5;
     color: #6c933e;
     font-size: 1rem;
     margin-bottom: 0.30rem;
+}
+
+.sport {
+    margin-bottom: 3rem;
+}
+
+.button-shop {
+    text-decoration: none;
+    color: #6c933e;
+    border: 0.1rem solid #6c933e;
+    font-size: 1.5rem;
+    padding: 0rem 1.5rem;
+    border-radius: 9999px;
+    align-self: flex-start;
 }
 
 /*--------------Reaso------------------*/
@@ -104,11 +140,30 @@
     padding: 1rem 1.6rem;
 }
 
+/*----   footer  ------*/
 .page {
+
     background-color: #4a4a4a;
     color: white;
     text-align: center;
     padding: 8rem;
+    position: relative;
 }
 
-.clothes {}
+.arrow {
+    background-color: white;
+    border-radius: 9999px;
+    padding: 0.5rem 0.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 45%;
+    top: -1rem;
+}
+
+.clothes {
+    list-style-type: none;
+}
+
+.social {
+    list-style-type: none;
+}
